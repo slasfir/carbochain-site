@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarboChain – Plataforma de Créditos de Carbono</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,9 +26,8 @@
   <section>
     <h2>🔗 O que é o CarboToken (CTK)?</h2>
     <p>É um ativo digital lastreado em créditos de carbono validados, com rastreabilidade, QR Code e certificações. Cada CTK representa 1 tonelada de CO² evitado.</p>
-
-    <div style="text-align: center; margin-top: 15px;">
-      <img src="carbotoken-logo.png" alt="Selo CarboToken CTK" style="width: 220px; max-width: 90%; border-radius: 8px;">
+    <div style="text-align: center; margin-top: 20px;">
+      <img src="logomarca-carbotoken.png" alt="Logomarca CarboToken" style="max-width: 200px; height: auto;">
     </div>
   </section>
 
@@ -47,10 +51,14 @@
     </ol>
   </section>
 
-  <section>
-    <h2>📬 Contato</h2>
-    <p>Email: contato@carbochain.tech</p>
-    <a class="btn" href="https://wa.me/5584999966643" target="_blank">Fale conosco pelo WhatsApp</a>
+  <section id="contato">
+    <h2>📬 Entre em Contato</h2>
+    <form action="https://formsubmit.co/carbochain@gmail.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
