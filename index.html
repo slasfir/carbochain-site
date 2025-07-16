@@ -5,64 +5,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarboChain – Plataforma de Créditos de Carbono</title>
-
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .language-selector {
+      text-align: right;
+      padding: 10px;
+      font-size: 14px;
+    }
+    .language-selector button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <div class="language-selector">
+    🌐 Idioma:
+    <button onclick="setLanguage('pt')">🇧🇷 Português</button>
+    <button onclick="setLanguage('en')">🇺🇸 English</button>
+    <button onclick="setLanguage('es')">🇪🇸 Español</button>
+    <button onclick="setLanguage('fr')">🇫🇷 Français</button>
+    🌐 Idioma: 
+    <button onclick="setLanguage('pt')">🇧🇷 Português</button>
+    <button onclick="setLanguage('en')">🇺🇸 English</button>
+  </div>
+
   <header>
     <img src="logomarca.png" alt="Logo CarboChain" class="logo" />
-    <h1>Bem-vindo à CarboChain</h1>
-    <p>A revolução verde na rastreabilidade e negociação de créditos de carbono</p>
+    <h1 data-pt="Bem-vindo à CarboChain" data-en="Welcome to CarboChain" data-es="Bienvenido a CarboChain" data-fr="Bienvenue chez CarboChain"></h1>
+    <p data-pt="A revolução verde na rastreabilidade e negociação de créditos de carbono" data-en="The green revolution in carbon credit traceability and trading" data-es="La revolución verde en la trazabilidad y negociación de créditos de carbono" data-fr="La révolution verte dans la traçabilité et le commerce des crédits carbone"
+       data-en="The green revolution in carbon credit traceability and trading"></p>
   </header>
 
   <section>
-    <h2>🌱 Nossa Missão</h2>
-    <p>Transformar o mercado de carbono com uma plataforma tecnológica segura, transparente e acessível, utilizando blockchain e rastreabilidade certificada.</p>
+    <h2 data-pt="🌱 Nossa Missão" data-en="🌱 Our Mission"></h2>
+    <p data-pt="Transformar o mercado de carbono com uma plataforma tecnológica segura, transparente e acessível, utilizando blockchain e rastreabilidade certificada."
+       data-en="Transform the carbon market with a secure, transparent, and accessible technology platform using blockchain and certified traceability."></p>
   </section>
 
   <section>
-    <h2>🔗 O que é o CarboToken (CTK)?</h2>
-    <p>É um ativo digital lastreado em créditos de carbono validados, com rastreabilidade, QR Code e certificações. Cada CTK representa 1 tonelada de CO² evitado.</p>
+    <h2 data-pt="🔗 O que é o CarboToken (CTK)?" data-en="🔗 What is CarboToken (CTK)?"></h2>
+    <p data-pt="É um ativo digital lastreado em créditos de carbono validados, com rastreabilidade, QR Code e certificações. Cada CTK representa 1 tonelada de CO² evitado."
+       data-en="It is a digital asset backed by validated carbon credits, with traceability, QR code, and certifications. Each CTK represents 1 ton of CO² avoided."></p>
     <div style="text-align: center; margin-top: 20px;">
-      <img src="logomarca-carbotoken.png" alt="Logomarca CarboToken" style="max-width: 200px; height: auto;">
+      <img src="carbotoken-logo.png" alt="Logomarca CarboToken" style="max-width: 200px; height: auto;">
     </div>
   </section>
 
   <section>
-    <h2>🚀 Diferenciais da CarboChain</h2>
+    <h2 data-pt="🚀 Diferenciais da CarboChain" data-en="🚀 CarboChain Highlights"></h2>
     <ul>
-      <li>Blockchain com rastreabilidade pública</li>
-      <li>Validação nacional e internacional</li>
-      <li>Plataforma com integração para usinas e consumidores</li>
-      <li>Token próprio (CTK) para negociação facilitada</li>
+      <li data-pt="Blockchain com rastreabilidade pública" data-en="Blockchain with public traceability"></li>
+      <li data-pt="Validação nacional e internacional" data-en="National and international validation"></li>
+      <li data-pt="Plataforma com integração para usinas e consumidores" data-en="Platform with integration for power plants and consumers"></li>
+      <li data-pt="Token próprio (CTK) para negociação facilitada" data-en="Own token (CTK) for easy trading"></li>
     </ul>
   </section>
 
   <section>
-    <h2>📈 Etapas do Projeto</h2>
+    <h2 data-pt="📈 Etapas do Projeto" data-en="📈 Project Stages"></h2>
     <ol>
-      <li>Registro oficial da patente</li>
-      <li>Certificação nacional (ANEEL, INMETRO)</li>
-      <li>Consulta protocolada na CVM</li>
-      <li>Lançamento da plataforma com 100 módulos</li>
+      <li data-pt="Registro oficial da patente" data-en="Official patent registration"></li>
+      <li data-pt="Certificação nacional (ANEEL, INMETRO)" data-en="National certification (ANEEL, INMETRO)"></li>
+      <li data-pt="Consulta protocolada na CVM" data-en="Consultation filed with CVM"></li>
+      <li data-pt="Lançamento da plataforma com 100 módulos" data-en="Platform launch with 100 modules"></li>
     </ol>
   </section>
 
   <section id="contato">
-    <h2>📬 Entre em Contato</h2>
+    <h2 data-pt="📬 Entre em Contato" data-en="📬 Contact Us"></h2>
     <form action="https://formsubmit.co/carbochain@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
+      <input type="text" name="nome" placeholder="Seu nome / Your name" required>
+      <input type="email" name="email" placeholder="Seu e-mail / Your email" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem / Your message" required></textarea>
+      <button type="submit" data-pt="Enviar" data-en="Send"></button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 CarboChain. Todos os direitos reservados.</p>
+    <p data-pt="© 2025 CarboChain. Todos os direitos reservados." data-en="© 2025 CarboChain. All rights reserved."></p>
   </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-pt]').forEach(el => {
+        if (el.hasAttribute('data-' + lang))
+        el.innerHTML = el.getAttribute('data-' + lang);
+      });
+    }
+    
+    // Detectar idioma do navegador e aplicar automaticamente
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang.startsWith('en')) {
+      setLanguage('en');
+    } else if (userLang.startsWith('es')) {
+      setLanguage('es');
+    } else if (userLang.startsWith('fr')) {
+      setLanguage('fr');
+    } else {
+      setLanguage('pt');
+    }
+    
+  </script>
 </body>
 </html>
